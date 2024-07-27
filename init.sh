@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo Removing connection to git...
+rm -rf ./.git
+echo Clearing README.md file...
+> ./README.md
+echo Deleting myself...
+rm ./init.sh
+echo Happy Coding! :)
