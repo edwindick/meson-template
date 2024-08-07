@@ -6,6 +6,7 @@ import sys, os, shutil
 
 argv_len = len(sys.argv)
 if argv_len < 3:
+    print("Invalid number of arguments.")
     sys.exit(-1)
 
 out_dir = sys.argv[1]

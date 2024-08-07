@@ -6,10 +6,12 @@ import sys, os
 
 argv_len = len(sys.argv)
 if argv_len < 2:
+    print("Invalid number of arguments.")
     sys.exit(-1)
 
 parent_dir = sys.argv[1]
 if not os.path.exists(parent_dir):
+    print("Specified directory does not exist.")
     sys.exit(-2)
 
 found_files = []
